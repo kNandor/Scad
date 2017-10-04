@@ -1,0 +1,12 @@
+R_e=6;
+R_i=3;
+H=15;
+difference(){
+difference(){
+cylinder(H,R_e,R_e,$fn=550,center=true);
+color([1,0,0])
+cylinder(H+2,R_i,R_i,$fn=500,center=true);
+}
+translate([R_i+(R_e-R_i)/2,0,H/2-4])rotate([0,90,0])color([0,1,0])
+cylinder(R_e-R_i+1,1,1,$fn=550,center=true);
+}
